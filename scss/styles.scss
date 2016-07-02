@@ -1,8 +1,8 @@
 // - - - - - - - - - - Variables - - - - - - - - - //
 $white: #ffffff;
-$highlight: #8BE0CE;
+$highlight: #5d2f65;
 $background-milk: #e9ebe8;
-$pink:#EDA1B3;
+$pink:#039B82;
 $dark-grey:#2C1D30;
 
 
@@ -13,7 +13,7 @@ $dark-grey:#2C1D30;
 }
 
 body {
-    font-family: "fira-sans-2", Helvetica, sans-serif;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
     -webkit-font-smothing: antialiast;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .button_secondary {
-    background: transparentize($color: $pink, $amount: 0.6); 
+    background-color: rgba( 250, 250, 250, 0.45);
 }
 
 .button_small {
@@ -48,7 +48,7 @@ body {
 }
 
 .button_large {
-    padding: 1rem 5rem;
+    padding: 0.3rem 2rem;
     font-size: 1.35rem;
     
 }
@@ -65,7 +65,7 @@ body {
 
 // - - - - - - - - - - Banner Styles - - - - - - - - - //
 #banner {
-    background-image: url(../images/banner-background.jpg);
+    background-image: url(../images/worktable_orange.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -130,7 +130,7 @@ body {
     .see_more {
         position: absolute;
         left: 50%;
-        margin-left: -51px;
+        margin-left: -41px;
         bottom: 60px;
     }
 }
@@ -145,6 +145,7 @@ body {
 	position: relative;
 	.service {
 		background: $white;
+        text-decoration: none;
 		width: 31%;
 		float: left;
 		margin: -5rem 1% 0 1%;
@@ -184,20 +185,20 @@ body {
 		}
     }
    
-    &:before {
-        content: " ";
+   &:before {
+		content: " ";
         position: absolute;
         left: 50%;
         bottom: 54px;
         border-top: 2px solid #c9c7d3;
         width: 59.5%;
         margin-left: -30.1%;
-    }
+	}
 }
 // - - - - - - - - - - Past Work Styles - - - - - - - - - //
 
 #past_work {
-    background: $dark_grey;
+    background: #47194a;
     padding: 5rem 0 25rem 0;
     text-align: center;
     position: relative;
@@ -282,7 +283,7 @@ body {
 // - - - - - - - - - - Contact Styles - - - - - - - - - //
 
 #contact {
-    background: lightgrey;
+    background: #fdaa71;
     padding: 6rem 0 8rem 0;
     text-align: center;
     .title {
@@ -295,6 +296,7 @@ body {
 
     }
 }
+
 
 footer {
 	padding: 1rem 0;
