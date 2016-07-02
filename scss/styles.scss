@@ -1,0 +1,231 @@
+// - - - - - - - - - - Variables - - - - - - - - - //
+$white: #ffffff;
+$highlight: #8BE0CE;
+$background-milk: #e9ebe8;
+$pink:#EDA1B3;
+$dark-grey:#2C1D30;
+
+
+// - - - - - - - - - - Global Styles - - - - - - - - - //
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "fira-sans-2", Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+.button {
+    border: none;
+    outline: none; 
+    border-radius: 2rem; 
+    padding: .5rem 3rem; 
+    font-weight: 700; 
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button_highlight {
+    background: $highlight;
+}
+
+.button_secondary {
+    background: transparentize($color: $pink, $amount: 0.6); 
+}
+
+.button_small {
+    padding: .3rem 1.5rem;
+
+}
+
+.cf:after,
+.cf:before {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+// - - - - - - - - - - Banner Styles - - - - - - - - - //
+#banner {
+    background-image: url(../images/banner-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+    header {
+		padding: 2rem 0;
+	}
+	#logo {
+		color: $white;
+        width: 250px; 
+		font-weight: 700;
+		font-size: 1.35rem;
+		float: left;
+        margin: 0;
+		
+        
+    }
+		span {
+			font-weight: 400;
+		}
+	}
+ 
+
+	nav {
+		float: right;
+		a {
+			color: $white;
+			font-weight: 700;
+			text-decoration: none;
+			margin-left: 2rem;
+           
+		}
+	}
+
+.content {
+    padding: 6rem 0 4rem 0; 
+    .title, .subtitle {
+        color: $white;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        margin: 0;  
+    }
+
+    .sub-title {
+        font-weight: 400; 
+        font-size: 1.35rem; 
+        width: 500px; 
+        margin: 0 auto 2rem auto; 
+        line-height: 1.75;
+    }
+
+    .button_wrapper {
+			text-align: center;
+			margin: 3rem 0;
+			.button {
+				margin: 0 .75rem;
+			}
+		}
+
+}
+
+
+    
+// - - - - - - - - - - Services Styles - - - - - - - - - //
+
+#services {
+	background: $background-milk;
+	padding: 2rem 0 6.5rem 0;
+	position: relative;
+	.service {
+		background: $white;
+		width: 31%;
+		float: left;
+		margin: -5rem 1% 0 1%;
+		padding: 3rem 2.5%;
+		text-align: center;
+		position: relative;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+		-moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+	  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+	  border-radius: .35rem;
+	  h3 {
+	  	margin: 0;
+	  	font-size: 1.5rem;
+	  	color: $dark-grey;
+	  }
+	  p {
+	  	margin: 0.5rem 0 2rem 0;
+	  	color: $dark-grey;
+	  }
+	  .button {
+	  	padding: .5rem 2rem;
+	  }
+    
+    &:after {
+	  	content: " ";
+	  	position: absolute;
+	  	left: 50%;
+	  	bottom: -50px;
+	  	height: 50px;
+	  	border-left: 2px solid #c9c7d3;
+	  }
+    }
+    .middle {
+		&:after {
+			bottom: -105px;
+			height: 105px;
+		}
+    }
+   
+    &:before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: 54px;
+        border-top: 2px solid #c9c7d3;
+        width: 59.5%;
+        margin-left: -30.1%;
+    }
+}
+
+
+// - - - - - - - - - - Past Work Styles - - - - - - - - - //
+
+#past_work {
+    background: $dark_grey;
+    padding: 5rem 0 25rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .title {
+        color: $white;
+        font-size: 2.5rem;
+        margin: 0 0 .75rem 0;
+    }
+    .logos {
+        width: 750px;
+        max-width: 95%;
+    }
+    #slider {
+        list-style: none;
+        li {
+            width: 600px;
+            height: 375px;
+            overflow: hidden;
+            background-color: $white;
+            box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+            -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+            -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+            position: absoulute;
+            z-index: 3;
+            border: 3.5rem 3.5rem 0 0; 
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
